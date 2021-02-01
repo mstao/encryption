@@ -1,7 +1,5 @@
 package me.mingshan.encryption.asymmetric;
 
-import sun.misc.IOUtils;
-
 import javax.crypto.Cipher;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -44,7 +42,6 @@ public class RSATest {
     System.out.println("密文：\r\n" + encodedData);
     String decodedData = privateDecrypt(encodedData, getPrivateKey(privateKey));
     System.out.println("解密后文字: \r\n" + decodedData);
-
   }
 
   public static Map<String, String> createKeys(int keySize) {
